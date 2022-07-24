@@ -19,7 +19,9 @@ function Hero() {
           </div>
           <div>
            18 y.o. student learning web dev and <br />
-           excelling his coding skillss....
+           excelling his coding skillss.... <br />
+           I also write 
+           <span className='underline mx-1'><Link href='/blogs'>Blogs</Link></span>
           </div>
         </div>
     </div>
