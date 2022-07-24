@@ -121,7 +121,7 @@ const Post = ({post}: Props) => {
     )}
 
     {/* comments */}
-    <div className='flex flex-col p-10 my-10 max-w-2xl mx-auto shadow shadow-gray-300 space-y-2'>
+    <div className='flex flex-col p-10 my-10 max-w-2xl mx-auto shadow space-y-2'>
         <h3 className='text-4xl text-white'>Comments</h3>
         <hr className='pb-2' />
         {post.comments && post.comments.map(Comment => {
@@ -133,7 +133,7 @@ const Post = ({post}: Props) => {
 
     {/* back button */}
     <Link href='/blogs'>
-        <div className='text-white flex justify-center my-10 font-semibold text-xl cursor-pointer'>Back to Blogs</div>
+        <div className='text-white flex justify-center my-10 font-semibold text-xl cursor-pointer animate-pulse hover:animate-none'>Back to Blogs</div>
     </Link>
 
     {/* footer */}
