@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Header() {
   return (
-    <div className='flex justify-between lg:py-8 py-4'>
+    <div className='flex justify-between h-screen lg:py-8 py-4 text-white'>
         <div>
             img
         </div>
