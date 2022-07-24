@@ -46,7 +46,9 @@ const Post = ({post}: Props) => {
       <img className='w-full h-40 object-cover' src={urlFor(post.mainImage).url()!} alt='' />
     
     <article className='max-w-3xl mx-auto p-5 text-white'>
-        <h1 className='text-3xl mt-10 mb-3 text-white'>{post.title}</h1>
+        <div className='text-xs text-gray-300 my-0 cursor-pointer hover:text-gray-400 underline lg:text-lg'>
+            <Link href='/blogs'> ← back</Link></div>
+        <h1 className='text-3xl mt-1 mb-3 text-white'>{post.title}</h1>
         <h2 className='font-light text-xl mb-2 text-gray-100'>{post.description}</h2>
         <div className='flex items-center space-x-2'>
             <img className='h-10 w-10 rounded-full' src={urlFor(post.author.image).url()!} alt={post.author.name} />
