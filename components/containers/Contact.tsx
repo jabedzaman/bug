@@ -12,10 +12,10 @@ function Contact() {
               <Link href='https://instagram.com/rysxense' target='_blank'>
                 <img src="/assets/images/icons8-instagram.svg" alt="instagram" className='width=50 cursor-pointer mx-1 lg:mx-2 transition-transform duration-150 ease-out hover:scale-125 ' />
               </Link>
-              <Link href='https://instagram.com/rysxense' target='_blank'>
+              <Link href='https://twitter.com/xenseee' target='_blank'>
                 <img src="/assets/images/icons8-twitter.svg" alt="instagram" className='width=50 cursor-pointer mx-1 lg:mx-2 transition-transform duration-150 ease-out hover:scale-125 ' />
               </Link>
-              <Link href='https://instagram.com/rysxense' target='_blank'>
+              <Link href='https://github.com/thexense' target='_blank'>
                 <img src="/assets/images/icons8-github.svg" alt="instagram" className='width=50 cursor-pointer mx-1 lg:mx-2 transition-transform duration-150 ease-out hover:scale-125 ' />
               </Link>
             </span>
