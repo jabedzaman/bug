@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Footer from '../components/layouts/Footer';
 import {sanityClient, urlFor} from '../sanity'
 import { Post } from '../typings'
 
@@ -48,6 +49,7 @@ export default function Home({posts}: Props) {
     <div className='text-white flex justify-center my-10 font-semibold text-2xl animate-pulse transform'>
       <Link href='/'>← Back to home</Link>
     </div>
+    <Footer/>
     </div>
   )
 }
