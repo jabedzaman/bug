@@ -6,6 +6,7 @@ import { Post } from '../../typings';
 import {useForm, SubmitHandler} from 'react-hook-form'
 import Link from 'next/link';
 import Footer from '../../components/layouts/Footer';
+import Head from 'next/head'
 
 interface iForm {
     _id: string;
@@ -38,6 +39,10 @@ const Post = ({post}: Props) => {
   return (
       <>
       {/* <Header/> */}
+      <Head>
+      <title>xense | {post.title}</title>
+        <link rel="icon" href="/favicon.ico" />
+    </Head>
       <img className='w-full h-40 object-cover' src={urlFor(post.mainImage).url()!} alt='' />
     
     <article className='max-w-3xl mx-auto p-5 text-white'>
