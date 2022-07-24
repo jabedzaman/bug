@@ -6,7 +6,7 @@ import Header from '../components/layouts/Header'
 
 const Home: NextPage = () => {
   return (
-    <div className="px-4 sm:px-8 md:px-24 lg:px-48 xl:px-72 text-white">
+    <div className="px-4 sm:px-8 md:px-24 lg:px-48 xl:px-72 text-white justify-between">
       <Head>
         <title>xense | Home</title>
         <link rel="icon" href="/favicon.ico" />

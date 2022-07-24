@@ -15,7 +15,16 @@ export default function Home({posts}: Props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      
+      {/* header */}
+      <div className='text-bold text-white text-6xl flex justify-center flex-row space-x-4 my-5'>
+        <span className='text-blue-600'>BLOGS</span> 
+        <span>by</span>
+        <span className='underline'>
+        <Link href='/'>        
+        xense!
+        </Link>
+        </span>
+      </div>
 
 
 
@@ -36,8 +45,8 @@ export default function Home({posts}: Props) {
         </Link>
       })}
     </div>
-    <div className='text-white flex justify-center font-semibold text-2xl hover:scale-105 transform'>
-      <Link href='/'>Back to home</Link>
+    <div className='text-white flex justify-center font-semibold text-2xl animate-pulse transform'>
+      <Link href='/'>← Back to home</Link>
     </div>
     </div>
   )
