@@ -46,7 +46,7 @@ export default function Home({posts}: Props) {
         </Link>
       })}
     </div>
-    <div className='text-white flex justify-center my-10 font-semibold text-2xl animate-pulse transform'>
+    <div className='text-white flex justify-center my-10 font-semibold text-2xl animate-pulse transform hover:animate-none'>
       <Link href='/'>← Back to home</Link>
     </div>
     <Footer/>
