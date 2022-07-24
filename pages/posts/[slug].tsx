@@ -5,6 +5,7 @@ import { sanityClient, urlFor } from '../../sanity';
 import { Post } from '../../typings';
 import {useForm, SubmitHandler} from 'react-hook-form'
 import Link from 'next/link';
+import Footer from '../../components/layouts/Footer';
 
 interface iForm {
     _id: string;
@@ -134,6 +135,9 @@ const Post = ({post}: Props) => {
     <Link href='/blogs'>
         <div className='text-white flex justify-center my-10 font-semibold text-xl cursor-pointer'>Back to Blogs</div>
     </Link>
+
+    {/* footer */}
+    <Footer/>
     
       </>
   )
