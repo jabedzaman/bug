@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import PortableText from 'react-portable-text';
 import { sanityClient, urlFor } from '../../sanity';
 import { Post } from '../../typings';
-
 import {useForm, SubmitHandler} from 'react-hook-form'
 import Link from 'next/link';
 
