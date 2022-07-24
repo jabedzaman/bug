@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 function Contact() {
   return (
@@ -7,8 +8,16 @@ function Contact() {
             <span className='font-semibold text-xl lg:text-4xl'>
                 Get in touch:
             </span>
-            <span>
-                form to be updated soon....
+            <span className='flex flex-row'>
+              <Link href='https://instagram.com/rysxense' target='_blank'>
+                <img src="/assets/images/icons8-instagram.svg" alt="instagram" className='width=50 cursor-pointer mx-1 lg:mx-2 transition-transform duration-150 ease-out hover:scale-125 ' />
+              </Link>
+              <Link href='https://instagram.com/rysxense' target='_blank'>
+                <img src="/assets/images/icons8-twitter.svg" alt="instagram" className='width=50 cursor-pointer mx-1 lg:mx-2 transition-transform duration-150 ease-out hover:scale-125 ' />
+              </Link>
+              <Link href='https://instagram.com/rysxense' target='_blank'>
+                <img src="/assets/images/icons8-github.svg" alt="instagram" className='width=50 cursor-pointer mx-1 lg:mx-2 transition-transform duration-150 ease-out hover:scale-125 ' />
+              </Link>
             </span>
         </div>
     </div>
