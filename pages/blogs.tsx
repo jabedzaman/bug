@@ -16,7 +16,7 @@ export default function Home({posts}: Props) {
       </Head>
 
       {/* header */}
-      <div className='text-bold text-white text-6xl flex justify-center flex-row space-x-4 my-5'>
+      <div className='text-bold text-white lg:text-6xl text-4xl flex justify-center flex-row space-x-2 my-5'>
         <span className='text-blue-600'>BLOGS</span> 
         <span>by</span>
         <span className='underline'>
@@ -29,7 +29,7 @@ export default function Home({posts}: Props) {
 
 
 {/* posts */}
-    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6'>
+    <div className='mx-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6'>
       {posts.map((post) => {
        return <Link href={`/posts/${post.slug.current}`} key={post._id}>
           <div className='group cursor-pointer overflow-hidden border rounded-lg bg-white'>
@@ -45,7 +45,7 @@ export default function Home({posts}: Props) {
         </Link>
       })}
     </div>
-    <div className='text-white flex justify-center font-semibold text-2xl animate-pulse transform'>
+    <div className='text-white flex justify-center my-10 font-semibold text-2xl animate-pulse transform'>
       <Link href='/'>← Back to home</Link>
     </div>
     </div>
