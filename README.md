@@ -44,9 +44,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
-
-`ANOTHER_API_KEY`
+`NEXT_PUBLIC_SANITY_DATASET`
+`NEXT_PUBLIC_SANITY_PROJECT_ID`
+`SANITY_API_TOKEN`
 ## Extend / Customize
 
 `.env.example` - add your own environmet variables from sanity
