@@ -1,23 +1,104 @@
-# Next.js + Tailwind CSS Example
+![Web Cover](demos/1.png)
+![Web Cover](demos/2.png)
+![Web Cover](demos/3.png)
+![Web Cover](demos/m.png)
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+# Nextjs Tailwind sanity starter template
+- **Nextjs repsponsive** portfolio blog template ,with **Tailwindcss and sanity.io**.
 
-## Deploy your own
+[![GitHub Repo stars](https://img.shields.io/github/stars/thexense/portfolio-blog?style=social)](https://github.com/thexense/portfolio-blog/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/timlrx/tailwind-nextjs-starter-blog?style=social)](https://github.com/thexense/portfolio-blog/network/)
+[![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Ftimlrxx)](https://twitter.com/xenseee)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/thexense/portfolio-blog)
+## Demo
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+- [Demo Blog](https://xense.vercel.app/) - this repo
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-## How to use
+## Features
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+- Sanity CMS
+- Responsive design
+- Tailwindcss
+- Attractive Design
+
+
+## Installation
+
+Install node modules with yarn
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+  yarn add
+  cd portfolio-blog
+```
+## Host Locally
+
+```bash
+    yarn dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_KEY`
+
+`ANOTHER_API_KEY`
+## Extend / Customize
+
+`.env.example` - add your own environmet variables from sanity
+
+`components/containers/Hero.tsx` - Add your own name and introduction
+
+`components/containers/Skills.tsx` - Add your own skills.
+
+`components/containers/Contact.tsx` - navigation links.
+
+`components/containers/Footer.tsx` - update link
+
+`public/assets/data/logo.png` - replace with your own logo.
+
+`public/favicon.ico` - replace favicon
+## Deploy
+
+**Vercel**  
+The easiest way to deploy the template is to use the [Vercel Platform](https://vercel.com) from the creators of Next.js. Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+**Netlify / GitHub Pages / Firebase etc.**  
+As the template uses `next/image` for image optimization, additional configurations have to be made to deploy on other popular static hosting websites like [Netlify](https://www.netlify.com/) or [GitHub Pages](https://pages.github.com/). An alternative image optimization provider such as Imgix, Cloudinary or Akamai has to be used. Alternatively, replace the `next/image` component with a standard `<img>` tag. See [`next/image` documentation](https://nextjs.org/docs/basic-features/image-optimization) for more details.
+
+
+### Want to discuss? 💬
+Have any questions, doubts or want to present your opinions, views? You're always welcome. You can [start discussions](https://github.com/thexense/portfolio-blog/discussions).
+## Licence
+
+[MIT](https://github.com/thexense/portfolio-blog/blob/master/LICENSE) © [xense](https://xense.vercel.app)
+
+
+## Support
+
+Using the template? Support this effort by giving a star on GitHub.
+### Want to Contribute 🙋‍♂️?
+Want to contribute? Great!
+All contributions are welcome, from code to documentation to graphics to design suggestions to bug reports. Please use GitHub to its fullest-- contribute Pull Requests, contribute tutorials or other wiki content-- whatever you have to offer, we can use it!
+
+
+**Please Donate to support me and my work!**
+</br>
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/xensee)
+</br>
+
+
+## 🚀 About Me
+I'm a full stack developer...
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://xense.vercel.app/)
+<!-- [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/) -->
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/xenseee)
+
+
+
