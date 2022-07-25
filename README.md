@@ -1,7 +1,7 @@
 ![Web Cover](demos/1.png)
 ![Web Cover](demos/2.png)
 ![Web Cover](demos/3.png)
-![Web Cover](demos/m.png)
+<!-- add mobile image later -->
 
 # Nextjs Tailwind sanity starter template
 - **Nextjs repsponsive** portfolio blog template ,with **Tailwindcss and sanity.io**.
