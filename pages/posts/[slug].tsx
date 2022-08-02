@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { GetStaticProps } from 'next';
 import React, { useState } from 'react'
 import PortableText from 'react-portable-text';
