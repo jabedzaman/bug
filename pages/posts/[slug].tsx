@@ -68,7 +68,7 @@ const Post = ({post}: Props) => {
                     <h2 className='text-xl font-bold my-5 text-white' {...props} />
                 ),
                 li: ({children}: any) => (
-                    <li className='ml-4 list-disc text-white'>{children}</li>
+                    <ul><li className='ml-4 list-disc text-white'>{children}</li></ul>
                 ),
                 link: ({href, children}: any) => (
                     <a href={href} className='text-blue-500 hover:underline'>{children}</a>
