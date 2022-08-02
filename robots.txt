@@ -1,0 +1,50 @@
+
+User-agent: Applebot
+Disallow: /public
+
+User-agent: baiduspider
+Disallow: /public
+
+
+User-agent: Bingbot
+Disallow: /public
+
+
+User-agent: Googlebot
+Disallow: /public
+
+
+User-agent: msnbot
+Disallow: /public
+
+
+User-agent: Naverbot
+Disallow: /public
+
+
+User-agent: Screaming Frog SEO Spider
+Disallow: /public
+
+
+User-agent: seznambot
+Disallow: /public
+
+
+User-agent: Slurp
+Disallow: /public
+
+
+User-agent: teoma
+Disallow: /public
+
+
+User-agent: Yandex
+Disallow: /public
+
+
+User-agent: Yeti
+Disallow: /public
+
+
+User-agent: *
+Disallow: /
