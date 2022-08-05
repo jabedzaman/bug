@@ -28,7 +28,10 @@ export default function Home({posts}: Props) {
         </span>
       </div>
 
-
+{/* back button */}
+<Link href='/'>
+        <div className='text-white flex justify-left lg:ml-10 ml-4 my-5 font-semibold text-sm lg:text-xl cursor-pointer animate-pulse hover:animate-none'>Back to home</div>
+    </Link>
 
 {/* posts */}
     <div className='mx-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6'>
