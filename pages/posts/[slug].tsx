@@ -89,13 +89,13 @@ const Post = ({post}: Props) => {
 
     ): (
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col max-w-2xl mx-auto mb-10 p-5'>
-             <h3 className='text-sm text-white'>Enjoyed This Article?</h3>
-             <h4 className='text-3xl font-bold text-white'>Leave a comment below!</h4>
-             <hr className='py-3 mt-2' />
+             {/* <h3 className='text-sm text-white'>Enjoyed This Article?</h3> */}
+             {/* <h4 className='text-3xl font-bold text-white'>Leave a comment below!</h4> */}
+             {/* <hr className='py-3 mt-2' /> */}
 
              <input {...register("_id")} type="hidden" name='_id' value={post._id} />
 
-             <label htmlFor="" className='block mb-5'>
+             {/* <label htmlFor="" className='block mb-5'>
                 <span className='text-white'>Name</span>
                 <input {...register("name", {required: true})} type="text" className='shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-gray-300 outline-none focus:ring' 
                 placeholder='John Doe'/>
@@ -109,10 +109,10 @@ const Post = ({post}: Props) => {
                 <span className='text-white'>Comment</span>
                 <textarea {...register("comment", {required: true})} className='shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-gray-300 outline-none focus:ring' 
                 placeholder='yo this article was dope!' rows={8}/>
-             </label>
+             </label> */}
 
              {/* validation errors */}
-             <div className='flex flex-col p-5'>
+             {/* <div className='flex flex-col p-5'>
                  {errors.name && (
                      <span className='text-red-500'>- The Name field is required</span>
                  )}
@@ -122,14 +122,14 @@ const Post = ({post}: Props) => {
                                   {errors.comment && (
                      <span className='text-red-500'>- The Comment field is required</span>
                  )}
-             </div>
+             </div> */}
 
-             <input type="submit" className='shadow bg-blue-300 hover:bg-blue-500 focus:shadow-outline focus:outline-none text-white font-bold px-4 py-2 rounded cursor-pointer' />
+             {/* <input type="submit" className='shadow bg-blue-300 hover:bg-blue-500 focus:shadow-outline focus:outline-none text-white font-bold px-4 py-2 rounded cursor-pointer' /> */}
     </form>
     )}
 
     {/* comments */}
-    <div className='flex flex-col p-10 my-10 max-w-2xl mx-auto shadow space-y-2'>
+    {/* <div className='flex flex-col p-10 my-10 max-w-2xl mx-auto shadow space-y-2'>
         <h3 className='text-4xl text-white'>Comments</h3>
         <hr className='pb-2' />
         {post.comments && post.comments.map(Comment => {
@@ -137,7 +137,7 @@ const Post = ({post}: Props) => {
                 <p><span className='text-white'>{Comment.name}</span>: {Comment.comment}</p>
             </div>
         })}
-    </div>
+    </div> */}
 
     {/* back button */}
     <Link href='/blogs'>
