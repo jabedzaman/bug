@@ -6,11 +6,11 @@
 ![Web Cover](demos/2.png)
 ![Web Cover](demos/3.png)
 <!-- add mobile image later -->
-[![GitHub Repo stars](https://img.shields.io/github/stars/thexense/portfolio-blog?style=social)](https://github.com/thexense/portfolio-blog/stargazers/)
-[![GitHub forks](https://img.shields.io/github/forks/thexense/portfolio-blog?style=social)](https://github.com/thexense/portfolio-blog/network/)
+[![GitHub Repo stars](https://img.shields.io/github/stars/xenseee/portfolio-blog?style=social)](https://github.com/xenseee/portfolio-blog/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/xenseee/portfolio-blog?style=social)](https://github.com/xenseee/portfolio-blog/network/)
 [![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fxenseee)](https://twitter.com/xenseee)
 </br>
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/thexense/portfolio-blog)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/xenseee/portfolio-blog)
 
 ## Demo
 
@@ -74,11 +74,11 @@ As the template uses `next/image` for image optimization, additional configurati
 
 ### Want to discuss? 💬
 
-Have any questions, doubts or want to present your opinions, views? You're always welcome. You can [start discussions](https://github.com/thexense/portfolio-blog/discussions).
+Have any questions, doubts or want to present your opinions, views? You're always welcome. You can [start discussions](https://github.com/xenseee/portfolio-blog/discussions).
 
 ## Licence
 
-[MIT](https://github.com/thexense/portfolio-blog/blob/master/LICENSE) © [xense](https://xense.vercel.app)
+[MIT](https://github.com/xenseee/portfolio-blog/blob/master/LICENSE) © [xense](https://xense.vercel.app)
 
 ## Support
 

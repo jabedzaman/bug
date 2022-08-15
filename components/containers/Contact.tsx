@@ -26,7 +26,7 @@ function Contact() {
               className="cursor-pointer mx-1 lg:mx-2 transition-transform duration-150 ease-out hover:scale-125 "
             />
           </Link>
-          <Link href="https://github.com/thexense" target="_blank">
+          <Link href="https://github.com/xenseee" target="_blank">
             <Image
               src="/assets/images/icons8-github.svg"
               width={50}
