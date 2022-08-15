@@ -1,12 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Blogbtn from '../components/containers/Blogbtn'
 import Contact from '../components/containers/Contact'
 import Hero from '../components/containers/Hero'
 import Skills from '../components/containers/Skills'
 import Footer from '../components/layouts/Footer'
-import Header from '../components/layouts/Header'
 
 const Home: NextPage = () => {
   return (
@@ -22,7 +20,6 @@ const Home: NextPage = () => {
       </div>
       <Blogbtn/>
       <Contact/>
-      {/* <Header/> */}
       <Footer/>
 
     </div>
