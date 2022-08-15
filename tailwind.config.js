@@ -7,5 +7,13 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-elevation')(
+      [],
+      {
+        color: '77,192,181',
+        opacityBoost: '0.23'
+      }
+    )
+  ],
 }
