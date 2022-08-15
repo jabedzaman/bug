@@ -11,7 +11,7 @@ module.exports = {
     require('tailwindcss-elevation')(
       [],
       {
-        color: '77,192,181',
+        color: '#f2f2f2',
         opacityBoost: '0.23'
       }
     )
