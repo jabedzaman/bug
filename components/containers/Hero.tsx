@@ -21,7 +21,7 @@ function Hero() {
           <div className="space-x-2 font-semibold text-xl lg:text-4xl">
             <span className="lg:ml-4">Hey! I am</span>
             <span className="text-blue-500">
-              <Link href="/">Jabed...</Link>
+              <Link href="/">xense...</Link>
             </span>
           </div>
           <div>
