@@ -4,6 +4,9 @@ import Link from 'next/link'
 import Footer from '../components/layouts/Footer';
 import {sanityClient, urlFor} from '../sanity'
 import { Post } from '../typings'
+import {
+	HomeIcon,
+} from "@heroicons/react/outline";
 
 interface Props {
   posts : [Post];
@@ -18,20 +21,22 @@ export default function Home({posts}: Props) {
       </Head>
 
       {/* header */}
-      <div className='text-bold text-white lg:text-6xl text-4xl flex justify-center flex-row space-x-2 my-5'>
+      <div className='flex justify-between lg:m-10 m-7'>
+        <div>
+          <Link href='/'>
+          <div className=''><HomeIcon className='h-10 lg:h-16 hover:translate-x-3 duration-200 ease-out text-white'/></div>
+          </Link>
+        </div>
+        <div className='text-white lg:text-6xl text-4xl flex space-x-2 lg:space-x-4 italic'>
         <span className='text-blue-600'>BLOGS</span> 
         <span>by</span>
-        <span className='underline'>
-        <Link href='/'>        
-        xense!
-        </Link>
-        </span>
+        <span className='underline'><Link href='/'>xense!</Link></span>
+        </div>
+        <div>
+          {/* add dropdown */}
+        </div>
       </div>
 
-{/* back button */}
-<Link href='/'>
-        <div className='text-white flex justify-left lg:ml-10 ml-4 my-5 font-semibold text-sm lg:text-xl cursor-pointer animate-pulse hover:animate-none'>Back to home</div>
-    </Link>
 
 {/* posts */}
     <div className='mx-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6'>
