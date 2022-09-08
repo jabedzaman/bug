@@ -38,7 +38,7 @@ export default function Home({posts}: Props) {
       {posts.map((post) => {
        return <Link href={`/posts/${post.slug.current}`} key={post._id}>
           <div className='group cursor-pointer elevation-4 overflow-hidden border rounded-lg bg-white'>
-           <img className='h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out' src={urlFor(post.mainImage).url()!} alt='' />
+           <img className='h-60 w-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out' src={urlFor(post.mainImage).url()!} alt='' />
            <div className='flex justify-between p-5 '>
              <div>
                <p className='font-bold text-black'>{post.title}</p>
