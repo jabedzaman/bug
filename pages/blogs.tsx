@@ -24,7 +24,7 @@ export default function Home({posts}: Props) {
       <div className='flex justify-between lg:m-10 m-7'>
         <div>
           <Link href='/'>
-          <div className=''><HomeIcon className='h-10 lg:h-16 hover:translate-x-3 duration-200 ease-out text-white'/></div>
+          <div className=''><HomeIcon className='h-10 lg:h-16 lg:hover:translate-x-3 duration-200 ease-out text-white'/></div>
           </Link>
         </div>
         <div className='text-white lg:text-6xl text-4xl flex space-x-2 lg:space-x-4 italic'>
