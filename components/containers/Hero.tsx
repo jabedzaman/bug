@@ -25,7 +25,7 @@ function Hero() {
             </span>
           </div>
           <div>
-            I am curently pursuing my bachelors degree (B.Tech) <br />
+            I am curently pursuing my bachelors degree (B.Tech CSE) <br />
             I am currently learning native development<br />I also write  
             <span className="underline mx-2">
               <Link href="/blogs">Technical Blogs...</Link>
