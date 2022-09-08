@@ -5,7 +5,7 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm("xrgjnrgk");
 
   if (state.succeeded) {
-    return <p>Thanks for your submission!</p>;
+    return <p className="lg:text-4xl text-2xl italic flex justify-center font-semibold">Thanks for your submission!</p>;
   }
 
   return (

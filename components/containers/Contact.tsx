@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div>
       <div className="flex items-center justify-center my-10 lg:my-20 flex-col space-y-10">
-        <span className="font-semibold text-xl lg:text-4xl">Get in touch:</span>
+        {/* <span className="font-semibold text-xl lg:text-4xl">Get in touch:</span> */}
         <span className="flex flex-row">
           {/* <Link href="https://instagram.com/xenseeee" target="_blank">
             <Image
@@ -21,7 +21,7 @@ function Contact() {
             <Image
               src="/assets/images/icons8-linkedin-logo-48.png"
               width={45}
-              height={45}
+              height={30}
               alt="linkedin"
               className="cursor-pointer mx-1 lg:mx-2 transition-transform duration-150 ease-out hover:scale-125 "
             />            
