@@ -25,10 +25,10 @@ function Hero() {
             </span>
           </div>
           <div>
-            18 y.o. student learning web dev and <br />
-            excelling his coding skillss.... <br />I also write
-            <span className="underline mx-1">
-              <Link href="/blogs">Blogs</Link>
+            I am curently pursuing my bachelors degree (B.Tech) <br />
+            I am currently learning native development<br />I also write  
+            <span className="underline mx-2">
+              <Link href="/blogs">Technical Blogs...</Link>
             </span>
           </div>
         </div>
