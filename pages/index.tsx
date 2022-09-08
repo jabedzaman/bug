@@ -5,6 +5,7 @@ import Contact from '../components/containers/Contact'
 import Hero from '../components/containers/Hero'
 import Skills from '../components/containers/Skills'
 import Footer from '../components/layouts/Footer'
+import Form from '../components/containers/Form'
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <Skills/>
       </div>
       <Blogbtn/>
+      <Form/>
       <Contact/>
       <Footer/>
 
