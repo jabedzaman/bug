@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Hero from "../components/containers/Hero";
+import Navbar from "../components/layouts/Navbar";
 
 const Home: NextPage = () => {
   return (
@@ -9,7 +9,12 @@ const Home: NextPage = () => {
         <title>xense | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero />
+      <div className="flex flex-col justify-between h-screen">
+        <div className="font-mono m-10">to be updated soon</div>
+        <div>
+          <Navbar />
+        </div>
+      </div>
     </div>
   );
 };

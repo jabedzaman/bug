@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-function Skills() {
+function Techstack() {
   return (
     <div className="flex flex-col space-y-10 items-center">
-      <div className="font-semibold text-xl lg:text-4xl">My Skills:</div>
+      <div className="font-semibold text-xl lg:text-4xl">My Techstack:</div>
       <div>
         <ul className="flex flex-row">
           <li className="m-2 cursor-pointer ">
-            <div className='transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5'>
+            <div className="transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5">
               <Image
                 width={50}
                 height={50}
@@ -19,7 +19,7 @@ function Skills() {
             </div>
           </li>
           <li className="m-2 cursor-pointer ">
-            <div className='transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5'>
+            <div className="transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5">
               <Image
                 width={50}
                 height={50}
@@ -30,7 +30,7 @@ function Skills() {
             </div>
           </li>
           <li className="m-2 cursor-pointer ">
-            <div className='transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5'>
+            <div className="transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5">
               <Image
                 width={50}
                 height={50}
@@ -41,7 +41,7 @@ function Skills() {
             </div>
           </li>
           <li className="m-2 cursor-pointer ">
-            <div className='transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5'>
+            <div className="transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5">
               <Image
                 width={50}
                 height={50}
@@ -54,7 +54,7 @@ function Skills() {
         </ul>
         <ul className="flex flex-row">
           <li className="m-2 cursor-pointer ">
-            <div className='transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5'>
+            <div className="transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5">
               <Image
                 width={50}
                 height={50}
@@ -65,7 +65,7 @@ function Skills() {
             </div>
           </li>
           <li className="m-2 cursor-pointer ">
-            <div className='transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5'>
+            <div className="transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5">
               <Image
                 width={50}
                 height={50}
@@ -76,7 +76,7 @@ function Skills() {
             </div>
           </li>
           <li className="m-2 cursor-pointer ">
-            <div className='transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5'>
+            <div className="transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5">
               <Image
                 width={50}
                 height={50}
@@ -88,7 +88,7 @@ function Skills() {
             </div>
           </li>
           <li className="m-2 cursor-pointer ">
-            <div className='transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5'>
+            <div className="transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5">
               <Image
                 width={50}
                 height={50}
@@ -101,7 +101,7 @@ function Skills() {
         </ul>
         <ul className="flex flex-row">
           <li className="m-2 cursor-pointer ">
-            <div className='transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5'>
+            <div className="transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5">
               <Image
                 width={50}
                 height={50}
@@ -112,7 +112,7 @@ function Skills() {
             </div>
           </li>
           <li className="m-2 cursor-pointer ">
-            <div className='transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5'>
+            <div className="transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5">
               <Image
                 width={50}
                 height={50}
@@ -123,7 +123,7 @@ function Skills() {
             </div>
           </li>
           <li className="m-2 cursor-pointer ">
-            <div className='transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5'>
+            <div className="transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5">
               <Image
                 width={50}
                 height={50}
@@ -134,7 +134,7 @@ function Skills() {
             </div>
           </li>
           <li className="m-2 cursor-pointer ">
-            <div className='transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5'>
+            <div className="transition-transform duration-150 ease-out hover:scale-110 mx-1 my-1 lg:mx-5 lg:my-5">
               <Image
                 width={50}
                 height={50}
@@ -150,4 +150,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default Techstack;

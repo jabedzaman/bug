@@ -1,14 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Header from "../layouts/Navbar";
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className="flex lg:flex-row flex-col items-center justify-center  lg:mx-20 space-y-6 space-x-3">
-        <div  
-        className="mt-10"
-        >
+    <div className="flex flex-col items-center justify-between h-screen">
+      <div className="flex lg:flex-row flex-col items-center justify-center space-y-6 space-x-4 mt-28 lg:mt-36">
+        <div className="mt-10">
           <Image
             src="/assets/images/xense.jpg"
             alt="xense"
@@ -25,25 +24,17 @@ function Hero() {
             </span>
           </div>
           <div>
-            18 y.o. student learning web dev and <br />
-            excelling his coding skillss.... <br />I also write
-            <span className="underline mx-1">
-              <Link href="/blogs">Blogs</Link>
+            I am curently pursuing my bachelors degree (B.Tech CSE) <br />
+            I am currently learning native development
+            <br />I also write
+            <span className="underline mx-2">
+              <Link href="/blogs">Technical Blogs...</Link>
             </span>
           </div>
         </div>
       </div>
-      <div className="mt-48">
-        <Link href="#skills">
-          <div className="transition-transform duration-150 ease-out animate-bounce cursor-pointer">
-            <Image
-              src="/assets/images/down.png"
-              alt="down"
-              height={50}
-              width={50}
-            />
-          </div>
-        </Link>
+      <div>
+        <Header />
       </div>
     </div>
   );
