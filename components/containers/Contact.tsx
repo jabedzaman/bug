@@ -24,7 +24,7 @@ function Contact() {
               height={30}
               alt="linkedin"
               className="cursor-pointer mx-1 lg:mx-2 transition-transform duration-150 ease-out hover:scale-125 "
-            />            
+            />
           </Link>
           <Link href="https://twitter.com/xenseee" target="_blank">
             <Image
