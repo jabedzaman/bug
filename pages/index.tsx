@@ -1,11 +1,6 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Blogbtn from '../components/containers/Blogbtn'
-import Contact from '../components/containers/Contact'
-import Hero from '../components/containers/Hero'
-import Skills from '../components/containers/Skills'
-import Footer from '../components/layouts/Footer'
-import Form from '../components/containers/Form'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Hero from "../components/containers/Hero";
 
 const Home: NextPage = () => {
   return (
@@ -14,18 +9,9 @@ const Home: NextPage = () => {
         <title>xense | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Hero/>
-      <div id='skills' className='lg:pt-20 pt-10'>
-      <Skills/>
-      </div>
-      <Blogbtn/>
-      <Form/>
-      <Contact/>
-      <Footer/>
-
+      <Hero />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
