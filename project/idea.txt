@@ -2,3 +2,4 @@
 2. Add loading spinner
 3. Add spotify currently playing
 4. Add Top loading bar
+5. merge header and navbar
