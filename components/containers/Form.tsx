@@ -1,5 +1,4 @@
 import { useForm, ValidationError } from "@formspree/react";
-import { Textarea } from "@nextui-org/react";
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xrgjnrgk");
@@ -15,7 +14,7 @@ export default function ContactForm() {
   return (
     <div>
       <div className="text-2xl lg:text-4xl font-semibold italic flex justify-center mb-10 mt-20">
-        Feel free to contact :)
+        Drop your mail and I will get to you asap!
       </div>
       <form
         onSubmit={handleSubmit}
@@ -36,24 +35,6 @@ export default function ContactForm() {
           />{" "}
           <br />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
-        </div>
-        <div className="my-4">
-          <label className="block text-gray-100 text-sm font-bold mb-2">
-            Message:
-          </label>
-          <Textarea
-            id="message"
-            name="message"
-            className="h-100"
-            minRows={1}
-            maxRows={100}
-          />
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
-          <br />
         </div>
         <button
           type="submit"
