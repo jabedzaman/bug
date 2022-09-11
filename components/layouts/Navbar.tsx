@@ -13,20 +13,20 @@ export default function Navbar() {
       href: "/about"
     },
     {
+      label: "Blog",
+      href: "/blogs"
+    },
+    {
       label: "Services",
       href: "/services"
     },
     {
-      label: "Blogs",
-      href: "/blogs"
-    },
-    {
       label: "Contact",
       href: "/contact"
-    },
+    }
   ];
 
-  const mobilemenu = [...leftmenu,];
+  const mobilemenu = [...leftmenu];
 
   return (
       <nav>
@@ -37,16 +37,14 @@ export default function Navbar() {
                 <div className="flex-col items-center justify-start order-1 hidden w-full md:flex md:flex-row md:justify-end md:w-auto md:order-none md:flex-1">
                   {leftmenu.map((item, index) => (
                     <Link href={item.href} key={index}>
-                      <a className="px-5 py-2 text-sm font-semibold text-gray-600 dark:text-gray-400 hover:text-blue-500">
+                      <a className="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500">
                         {item.label}
                       </a>
                     </Link>
                   ))}
                 </div>
-                <div className="flex justify-end w-full md:w-auto">
-                  <div>
-                    
-                  </div>
+                <div className="flex justify-between w-full md:w-auto">
+                  
                   <Disclosure.Button
                     aria-label="Toggle Menu"
                     className="px-2 py-1 ml-auto text-gray-500 rounded-md md:hidden focus:text-blue-500 focus:outline-none dark:text-gray-300 ">
@@ -77,7 +75,6 @@ export default function Navbar() {
                     <Link href={item.href} key={index}>
                       <a
                         className="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500"
-                        target={item ? "_blank" : ""}
                         rel={item ? "noopener" : ""}>
                         {item.label}
                       </a>
