@@ -15,7 +15,7 @@ const Home: NextPage = () => {
           About Me
         </span>
         <span>
-          <p className="text-justify lg:text-xl text-sm my-4 lg:my-7">
+          <p className="text-justify lg:text-xl text-sm my-1 lg:my-7">
             An engineering undergrad with computer science background. A full
             stack developer with a passion for building scalable and
             maintainable web applications. Having experience in building web
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           </p>
         </span>
         <Techstack />
-        <div className="sticky bottom-0">
+        <div className="sticky bottom-9">
           <Navbar />
         </div>
       </div>
