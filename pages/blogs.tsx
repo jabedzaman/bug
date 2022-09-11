@@ -1,10 +1,13 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Link from "next/link";
 import Footer from "../components/layouts/Footer";
+import Navbar from "../components/layouts/Navbar";
 import { sanityClient, urlFor } from "../sanity";
 import { Post } from "../typings";
-import { HomeIcon } from "@heroicons/react/outline";
+import Image from "next/image";
+import arrow from ".../assets/images/down.png"
 
 interface Props {
   posts: [Post];
@@ -12,37 +15,31 @@ interface Props {
 export default function Home({ posts }: Props) {
   // console.log(posts)
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto p-4 lg:px-8">
       <Head>
         <title>xense | Blogs</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* header */}
-      <div className="flex justify-between lg:m-10 py-4 px-7 sticky top-0 bg-primary bg-opacity-90 z-40 border-black-800 border-b-2">
-        <div>
-          <Link href="/">
-            <div className="">
-              <HomeIcon className="h-10 lg:h-16 lg:hover:translate-x-3 duration-200 ease-out text-white" />
-            </div>
-          </Link>
-        </div>
-        <div className="text-white lg:text-6xl text-4xl flex space-x-2 lg:space-x-4 italic">
-          <span className="text-blue-600 font-semibold">BLOGS</span>
-          <span>by</span>
-          <span className="underline">
-            <Link href="/">xense!</Link>
+      <div>
+        <div className=" z-100 " id="start">
+          <Navbar />
+          <span className="font-semibold italic text-2xl lg:text-4xl flex justify-center space-x-2">
+            <span className="text-blue-500">Blogs</span>
+            <span className="text-white">by</span>
+            <span className="text-white">
+              <Link href="/">Xense</Link>
+            </span>
           </span>
         </div>
-        <div>{/* add dropdown */}</div>
       </div>
-      {/* header ends */}
       {/* posts */}
-      <div className="mx-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6">
+      <div className="mx-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-4 md:p-6">
         {posts.map((post) => {
           return (
             <Link href={`/posts/${post.slug.current}`} key={post._id}>
-              <div className="group cursor-pointer elevation-4 overflow-hidden border rounded-lg bg-white">
+              <div className="group cursor-pointer overflow-hidden border rounded-lg bg-white">
                 <img
                   className="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
                   src={urlFor(post.mainImage).url()!}
@@ -52,19 +49,25 @@ export default function Home({ posts }: Props) {
                   <div>
                     <p className="font-bold text-black">{post.title}</p>
                     <p className="text-xs text-black">
-                      {post.description} by {post.author.name}
+                      {post.description}
+                      {/* by {post.author.name} */}
                     </p>
                   </div>
-                  <img
+                  {/* <img
                     className="h-12 w-12 rounded-full"
                     src={urlFor(post.author.image).url()!}
                     alt="xense"
-                  />
+                  /> */}
                 </div>
               </div>
             </Link>
           );
         })}
+      </div>
+      <div className="sticky bottom-2 rotate-180 w-16 cursor-pointer bg-black rounded-full p-2 opacity-75">
+        <Link href="#start">
+        <img src="/assets/images/down.png" alt="arrow"/>
+        </Link>
       </div>
       <div className="mt-6">
         <Footer />

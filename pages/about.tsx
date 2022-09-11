@@ -5,28 +5,26 @@ import Navbar from "../components/layouts/Navbar";
 
 const Home: NextPage = () => {
   return (
-    <div className="text-white m-10 lg:mx-40">
+    <div className="p-4 lg:px-48 text-white">
       <Head>
         <title>xense | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col h-screen justify-between">
+      <Navbar/>
+      <div className="flex flex-col justify-between mt-9 mx-9">
+        <div className=" flex flex-col space-y-2">
         <span className="font-semibold lg:text-6xl text-4xl flex lg:justify-start justify-center ">
           About Me
         </span>
         <span>
-          <p className="text-justify lg:text-xl text-sm my-4 lg:my-7">
+          <p className="text-justify lg:text-xl text-sm my-1 lg:my-7">
             An engineering undergrad with computer science background. A full
             stack developer with a passion for building scalable and
-            maintainable web applications. Having experience in building web
-            applications using cutting edge technologies like React, Next.js,
-            Node.js, tailwindcss, sanity and Firebase. I am currently learning
+            maintainable web applications. I am currently learning
             Native Development.
           </p>
         </span>
         <Techstack />
-        <div className="sticky bottom-0">
-          <Navbar />
         </div>
       </div>
     </div>
