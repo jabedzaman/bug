@@ -20,7 +20,7 @@ export default function ContactForm() {
         onSubmit={handleSubmit}
         className="flex flex-col justify-center space-x-5"
       >
-        <div className="my-4">
+        <div className="my-4 flex flex-col justify-center items-center">
           <label
             htmlFor="email"
             className="block text-gray-100 text-sm font-bold mb-2"
@@ -31,18 +31,18 @@ export default function ContactForm() {
             id="email"
             type="email"
             name="email"
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded w-full lg:w-48 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />{" "}
           <br />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
-        </div>
         <button
           type="submit"
           disabled={state.submitting}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-5 my-5"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold w-20 py-2 px-4 rounded m-5"
         >
           Submit
         </button>
+        </div>
         <ValidationError errors={state.errors} />
       </form>
     </div>

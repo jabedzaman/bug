@@ -5,7 +5,7 @@ import Navbar from "../components/layouts/Navbar";
 
 const Home: NextPage = () => {
   return (
-    <div className="text-white m-10 lg:mx-40">
+    <div className="p-4 lg:px-48 text-white">
       <Head>
         <title>xense | Home</title>
         <link rel="icon" href="/favicon.ico" />
