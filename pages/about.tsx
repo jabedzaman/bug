@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
-      <div className="flex flex-col justify-between ">
+      <div className="flex flex-col justify-between mt-9 mx-9">
         <div className=" flex flex-col space-y-2">
         <span className="font-semibold lg:text-6xl text-4xl flex lg:justify-start justify-center ">
           About Me

@@ -7,7 +7,8 @@ import { Post } from '../../typings';
 import {useForm, SubmitHandler} from 'react-hook-form'
 import Link from 'next/link';
 import Footer from '../../components/layouts/Footer';
-import Head from 'next/head'
+import Head from 'next/head';
+import Navbar from '../../components/layouts/Navbar';
 
 interface iForm {
     _id: string;
@@ -45,6 +46,8 @@ const Post = ({post}: Props) => {
         <link rel="icon" href="/favicon.ico" />
     </Head>
       <img className='w-full h-40 object-cover' src={urlFor(post.mainImage).url()!} alt='' />
+      
+    <Navbar/>
     
     <article className='max-w-3xl mx-auto p-5 text-white'>
         <div className='text-xs text-gray-300 my-0 cursor-pointer hover:text-gray-400 underline lg:text-lg'>
