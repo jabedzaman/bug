@@ -9,11 +9,9 @@ const Home: NextPage = () => {
         <title>xense | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col justify-between h-screen">
+      <div className="flex flex-col p-4">
+        <Navbar />
         <div className="font-mono m-10">to be updated soon</div>
-        <div>
-          <Navbar />
-        </div>
       </div>
     </div>
   );
