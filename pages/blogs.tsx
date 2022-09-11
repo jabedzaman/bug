@@ -19,7 +19,7 @@ export default function Home({ posts }: Props) {
       </Head>
 
       {/* header */}
-      <div className="flex justify-between lg:m-10 py-4 px-7 sticky top-0 bg-primary bg-opacity-90 z-40 border-black-800 border-b-2">
+      <div className="flex justify-between lg:m-10 py-4 px-7 sticky top-0 bg-primary bg-opacity-90 z-40 border-black-800 border-b-2 shadow-2xl">
         <div>
           <Link href="/">
             <div className="">
