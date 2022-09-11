@@ -1,11 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Header from "../layouts/Navbar";
+// import Navbar from "../layouts/Navbar";
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center justify-between h-screen">
+    <div className="flex flex-col items-center ">
+      <div className="mt-10">
+        {/* <Navbar /> */}
+      </div>
       <div className="flex lg:flex-row flex-col items-center justify-center space-y-6 space-x-4 mt-28 lg:mt-36">
         <div className="mt-10">
           <Image
@@ -32,9 +35,6 @@ function Hero() {
             </span>
           </div>
         </div>
-      </div>
-      <div>
-        <Header />
       </div>
     </div>
   );
