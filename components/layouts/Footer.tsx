@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div>
       <hr />
-      <div className="flex lg:justify-between justify-center my-10 lg:mx-20 mx-6">
+      <div className="flex lg:justify-between justify-center my-4 lg:my-10 lg:mx-20 mx-6">
         <div className="text-gray-300 italic">
           © copyright 2022 by <Link href="/">xense</Link>
         </div>

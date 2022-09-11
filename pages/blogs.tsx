@@ -42,7 +42,7 @@ export default function Home({ posts }: Props) {
         {posts.map((post) => {
           return (
             <Link href={`/posts/${post.slug.current}`} key={post._id}>
-              <div className="group cursor-pointer elevation-4 overflow-hidden border rounded-lg bg-white">
+              <div className="group cursor-pointer overflow-hidden border rounded-lg bg-white">
                 <img
                   className="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
                   src={urlFor(post.mainImage).url()!}
@@ -52,14 +52,15 @@ export default function Home({ posts }: Props) {
                   <div>
                     <p className="font-bold text-black">{post.title}</p>
                     <p className="text-xs text-black">
-                      {post.description} by {post.author.name}
+                      {post.description}
+                       {/* by {post.author.name} */}
                     </p>
                   </div>
-                  <img
+                  {/* <img
                     className="h-12 w-12 rounded-full"
                     src={urlFor(post.author.image).url()!}
                     alt="xense"
-                  />
+                  /> */}
                 </div>
               </div>
             </Link>
