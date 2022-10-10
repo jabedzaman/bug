@@ -3,8 +3,6 @@
 - **Nextjs repsponsive** portfolio blog template ,with **Tailwindcss and sanity.io**.
 
 ![Web Cover](demos/1.png)
-![Web Cover](demos/2.png)
-![Web Cover](demos/3.png)
 <!-- add mobile image later -->
 [![GitHub Repo stars](https://img.shields.io/github/stars/xenseee/portfolio-blog?style=social)](https://github.com/xenseee/portfolio-blog/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/xenseee/portfolio-blog?style=social)](https://github.com/xenseee/portfolio-blog/network/)
@@ -14,7 +12,7 @@
 
 ## Demo
 
-- [Demo Blog](https://xense.vercel.app/) - this repo
+- [Demo Blog](https://portfolio-blog-xense.vercel.app/) - this repo
 
 ## Features
 
