@@ -12,6 +12,7 @@
     "@heroicons/react": "v1",
     "@sanity/client": "^3.3.2",
     "@sanity/image-url": "^1.0.1",
+    "@tailwindcss/forms": "^0.5.3",
     "import": "^0.0.6",
     "next": "latest",
     "next-sanity": "^0.6.0",

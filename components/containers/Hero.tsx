@@ -1,43 +1,38 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-// import Navbar from "../layouts/Navbar";
+import React from "react"
+import Link from "next/link"
 
-function Hero() {
-  return (
-    <div className="flex flex-col items-center ">
-      <div className="mt-10">
-        {/* <Navbar /> */}
-      </div>
-      <div className="flex lg:flex-row flex-col items-center justify-center space-y-6 space-x-4 mt-28 lg:mt-36">
-        <div className="mt-10">
-          <Image
-            src="/assets/images/xense.jpg"
-            alt="xense"
-            width={200}
-            height={200}
-            className="rounded-full space-y-2 border-spacing-4 border-gray-200 border-4"
-          />
-        </div>
-        <div className="flex lg:flex-col flex-col space-y-3 justify-center items-center ">
-          <div className="space-x-2 font-semibold text-xl lg:text-4xl">
-            <span className="lg:ml-4">Hey! I am</span>
-            <span className="text-blue-500">
-              <Link href="/">xense...</Link>
-            </span>
-          </div>
-          <div>
-            I am curently pursuing my bachelors degree (B.Tech CSE) <br />
-            I am currently learning native development
-            <br />I also write
-            <span className="underline mx-2">
-              <Link href="/blogs">Technical Blogs...</Link>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(' ')
 }
 
-export default Hero;
+export default function Example() {
+  return (
+    <div className="relative">
+      <main className="lg:relative">
+        <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+          <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+            <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+              <span className="block xl:inline">Hey I am </span>{' '}
+              <span className="block text-indigo-600 xl:inline">Jabed</span>
+            </h1>
+            <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
+              <div className="rounded-md shadow">
+                <div
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                  >
+                  <Link
+                  href="/blogs">
+                  Read Blogs
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+           {/* eslint-disable-next-line @next/next/no-img-element */}
+        </div>
+      </main>
+    </div>
+  )
+}

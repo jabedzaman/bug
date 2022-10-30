@@ -6,8 +6,7 @@ import Footer from "../components/layouts/Footer";
 import Navbar from "../components/layouts/Navbar";
 import { sanityClient, urlFor } from "../sanity";
 import { Post } from "../typings";
-import Image from "next/image";
-import arrow from ".../assets/images/down.png"
+
 
 interface Props {
   posts: [Post];
@@ -15,62 +14,38 @@ interface Props {
 export default function Home({ posts }: Props) {
   // console.log(posts)
   return (
-    <div className="max-w-7xl mx-auto p-4 lg:px-8">
+    <div className="max-w-7xl mx-auto">
       <Head>
-        <title>xense | Blogs</title>
+        <title>Jabed</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      {/* header */}
-      <div>
-        <div className=" z-100 " id="start">
-          <Navbar />
-          <span className="font-semibold italic text-2xl lg:text-4xl flex justify-center space-x-2">
-            <span className="text-blue-500">Blogs</span>
-            <span className="text-white">by</span>
-            <span className="text-white">
-              <Link href="/">Xense</Link>
-            </span>
-          </span>
+      <Navbar/>
+      <div className="relative max-w-7xl mx-auto">
+        <div className="text-center">
+          <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">From the blogs</h2>
         </div>
-      </div>
-      {/* posts */}
-      <div className="mx-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-4 md:p-6">
-        {posts.map((post) => {
-          return (
-            <Link href={`/posts/${post.slug.current}`} key={post._id}>
-              <div className="group cursor-pointer overflow-hidden border rounded-lg bg-white">
-                <img
-                  className="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
-                  src={urlFor(post.mainImage).url()!}
-                  alt=""
-                />
-                <div className="flex justify-between p-5 ">
-                  <div>
-                    <p className="font-bold text-black">{post.title}</p>
-                    <p className="text-xs text-black">
-                      {post.description}
-                      {/* by {post.author.name} */}
-                    </p>
-                  </div>
-                  {/* <img
-                    className="h-12 w-12 rounded-full"
-                    src={urlFor(post.author.image).url()!}
-                    alt="xense"
-                  /> */}
+        <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+          {posts.map((post) => (
+            <div key={post.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+              <div className="flex-shrink-0">
+                <img className="h-48 w-full object-cover" src={urlFor(post.mainImage).url()!} alt="" />
+              </div>
+              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                <div className="flex-1">
+                  <p className="text-sm font-medium text-indigo-600">
+                    <Link href={`/posts/${post.slug.current}`} key={post._id} className="hover:underline">
+                      {post.title}
+                    </Link>
+                  </p>
+                  <a href={urlFor(post.mainImage).url()!} className="block mt-2">
+                    <p className="text-xl font-semibold text-gray-900">{post.title}</p>
+                    <p className="mt-3 text-base text-gray-500">{post.description}</p>
+                  </a>
                 </div>
               </div>
-            </Link>
-          );
-        })}
-      </div>
-      <div className="sticky bottom-2 rotate-180 w-16 cursor-pointer bg-black rounded-full p-2 opacity-75">
-        <Link href="#start">
-        <img src="/assets/images/down.png" alt="arrow"/>
-        </Link>
-      </div>
-      <div className="mt-6">
-        <Footer />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
