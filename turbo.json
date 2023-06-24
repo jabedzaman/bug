@@ -20,6 +20,12 @@
                 "build"
             ]
         },
+        "test": {
+            "dependsOn": [
+                "build"
+            ],
+            "cache": false
+        },
         "lint": {}
     }
 }
