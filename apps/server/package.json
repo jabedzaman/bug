@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "Server for spotidl api",
   "main": "dist/index.ts",
-  "type": "module",
   "scripts": {
-    "build": "tsc -p .",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "prepare": "tsc -p .",
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git",
@@ -19,12 +19,11 @@
   },
   "homepage": "https://github.com/jabedzaman/spotidl#readme",
   "dependencies": {
-    "@spotidl/core": "../../packages/core",
     "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "@types/node": "^15.3.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.3"
   }
 }
