@@ -9,10 +9,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+       - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 16
-      - run: npm install -g pnpm
-      - run: pnpm install
-      - run: pnpm test
+          node-version: 18
+      - name: Install pnpm
+       - run: npm install -g pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Run tests
+        env:
+          CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        run: pnpm test
