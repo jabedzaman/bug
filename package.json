@@ -1,14 +1,16 @@
 {
-  "name": "spotdl-api",
+  "name": "spotidl",
   "version": "0.1.0",
   "description": "API to download spotify songs with metadata",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "turbo start",
+    "build": "turbo build",
+    "dev": "turbo dev"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jabedzaman/spotdl-api.git"
+    "url": "git+https://github.com/jabedzaman/spotidl.git"
   },
   "keywords": [
     "spotify",
