@@ -1,6 +1,0 @@
-[submodule "backend-portfolio"]
-	path = backend-portfolio
-	url = https://github.com/xenseee/backend-portfolio
-[submodule "backend"]
-	path = backend
-	url = https://github.com/xenseee/backend
