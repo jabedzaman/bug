@@ -1,25 +1,26 @@
-name: Run Tests for spotidl-core
+name: Run tests for spotidl-core
 
-on:
-  push:
-  pull_request:
-  workflow_dispatch:
+on: [push]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
+
     steps:
-       - name: Checkout code
+      - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 18
+          node-version: 14
+
       - name: Install pnpm
-       - run: npm install -g pnpm
+        run: npm install -g pnpm
+
       - name: Install dependencies
         run: pnpm install
+
       - name: Run tests
         env:
           CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
