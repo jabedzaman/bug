@@ -5,6 +5,8 @@
   "main": "index.ts",
   "scripts": {
     "start": "turbo start",
+    "start:server": "turbo start --filter=server",
+    "start:core": "turbo start --filter=core",
     "build": "turbo build",
     "dev": "turbo dev"
   },
@@ -23,9 +25,9 @@
   "author": "jabedzaman <hi@jabed.dev> (https://jabed.dev/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jabedzaman/spotdl-api/issues"
+    "url": "https://github.com/jabedzaman/spotidl-api/issues"
   },
-  "homepage": "https://github.com/jabedzaman/spotdl-api#readme",
+  "homepage": "https://github.com/jabedzaman/spotidl-api#readme",
   "devDependencies": {
     "turbo": "^1.10.6"
   }

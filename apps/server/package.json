@@ -1,0 +1,30 @@
+{
+  "name": "@spotidl/server",
+  "version": "0.1.0",
+  "description": "Server for spotidl api",
+  "main": "dist/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jabedzaman/spotidl.git"
+  },
+  "author": "jabedzaman <hi@jabed.dev> (https://jabed.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jabedzaman/spotidl/issues"
+  },
+  "homepage": "https://github.com/jabedzaman/spotidl#readme",
+  "dependencies": {
+    "@spotidl/core": "../../packages/core",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
