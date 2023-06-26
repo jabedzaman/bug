@@ -14,6 +14,9 @@ importers:
 
   apps/server:
     dependencies:
+      '@spotidl/core':
+        specifier: '*'
+        version: link:../../packages/core
       dotenv:
         specifier: ^16.3.1
         version: 16.3.1

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jabedzaman/spotidl#readme",
   "dependencies": {
+    "@spotidl/core": "*",
     "dotenv": "^16.3.1"
   },
   "devDependencies": {
