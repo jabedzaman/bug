@@ -45,19 +45,27 @@ class LinkedList {
       std::cout << std::endl;
     }
 
-     bool search(T value){
-      if (!this->head) {
-        return false;
-      }
+    void insertAtIndex(int value, int index) {
+        Node<T>* newNode = new Node(value);
 
-      Node<T>* current = head;
-      int status;
-      while (current != nullptr) {
-        if (current-> data == value){
-          return true;
+        if (index == 0) {
+            newNode->next = head;
+            head = newNode;
+            return;
         }
-      }
-      return false;
+
+        Node<T>* prevNode = head;
+        for (int i = 0; i < index - 1 && prevNode != nullptr; ++i) {
+            prevNode = prevNode->next;
+        }
+
+        if (prevNode == nullptr) {
+            std::cout << "Index out of bounds." << std::endl;
+            return;
+        }
+
+        newNode->next = prevNode->next;
+        prevNode->next = newNode;
     }
 
     ~LinkedList() {
@@ -84,20 +92,8 @@ int main() {
   }
 
   myList.display();
+  myList.insertAtIndex(int 10, int 3);
 
-  std::cout << "Do you want to search anything brother? [Y/n]" << std::endl;
-  char ans;
-  std::cin >> ans;
-  if (ans != 'Y'){
-    return 0;
-  }
 
-  int value;
-  std::cout << "Which one then?" << std::endl;
-
-  std::cin >> value;
-
-  std::cout << myList.search(value);
   return 0;
 }
-
