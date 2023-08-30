@@ -33,6 +33,6 @@ int main()
     if(i < s2){
       sum+=v2[i];
     }
-    std::cout << sum << " ";
+    std::cout << sum << "\t";
   }
 }
