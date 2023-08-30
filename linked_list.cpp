@@ -53,7 +53,7 @@ public:
     std::cout << std::endl;
   }
 
-  void insertAtIndex(int value, int index)
+  void insertAtIndex(T value, int index)
   {
     Node<T> *newNode = new Node(value);
 
@@ -103,6 +103,18 @@ public:
     delete temp;
   }
 
+
+  bool searchElement (T value){
+    Node<T>* current = head;
+    while(current != nullptr){
+      if(current->data == value){
+        return true;
+      }
+      current = current->next;
+    }
+    return false;
+  }
+
   ~LinkedList()
   {
     Node<T> *current = head;
@@ -144,6 +156,15 @@ int main()
   std::cin >> index;
   myList.deleteAtIndex(index);
   myList.display();
+
+
+  std::cout << "Enter value to search: " << std::endl;
+  std::cin >> value;
+  if(myList.searchElement(value)){
+    std::cout << "Found" << std::endl;
+  } else {
+    std::cout << "Not found" << std::endl;
+  }
 
   return 0;
 }
