@@ -47,7 +47,20 @@ public:
             temp = temp->next;
         }
         std::cout << std::endl;
-    }
+    };
+
+    bool search(T value){
+        Node<T> *temp = this->head->next;
+        for (int i = 0; i < this->size; i++)
+        {
+            if (temp->data == value)
+            {
+                return true;
+            }
+            temp = temp->next;
+        }
+        return false;
+    };
 };
 
 int main()
@@ -58,5 +71,6 @@ int main()
     list->add(2);
     list->add(3);
     list->display();
+    std::cout << list->search(2) << std::endl;
     return 0;
 }
