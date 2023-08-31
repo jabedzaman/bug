@@ -1,16 +1,12 @@
-import java.util.Scanner;
-
-public class Node {
-  int data;
-  Node next;
-
-  Node(int data) {
-    this.data = data;
-    this.next = null;
-  }
-}
-
 public class LinkedList {
+  class Node{
+    int data;
+    Node next;
+    public Node(int data){
+      this.data = data;
+      this.next = null;
+    }
+  }
   Node head;
 
   public void append( int value){
