@@ -40,6 +40,17 @@ public:
     {
         return this->size;
     }
+
+    void display()
+    {
+        Node<T> *current = this->head->next;
+        while (current != NULL)
+        {
+            std::cout << current->data << " ";
+            current = current->next;
+        }
+        std::cout << std::endl;
+    }
 };
 
 int main()
@@ -52,5 +63,6 @@ int main()
     list->add(5); 
     list->getSize();
     std::cout << list->getSize() << std::endl;
+    list->display();
     return 0;
 }
