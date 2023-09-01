@@ -19,20 +19,7 @@ class GroundedHeaderLinkedList
 private:
     Node<T> *head;
     Node<T> *tail;
-    int size; void set(int index, T data)
-    {
-        if (index < 0 || index >= this->size)
-        {
-            throw "Index out of bounds";
-        }
-        Node<T> *temp = this->head->next;
-        for (int i = 0; i < index; i++)
-        {
-            temp = temp->next;
-        }
-        temp->data = data;
-    }
-
+    int size; 
 public:
     GroundedHeaderLinkedList()
     {
