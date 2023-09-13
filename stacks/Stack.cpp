@@ -74,6 +74,14 @@ public:
       return min;
     }
 
+    void rprint()
+    {
+      for (int i = this->capacity - 1 ; i >= 0 ; i--) {
+        std::cout << stack[i] << " ";
+      }
+      std::cout << std::endl;
+    }
+
 };
 
 void menu(){
@@ -83,7 +91,8 @@ void menu(){
   std::cout << "4. Print" << std::endl;
   std::cout << "5. Get Max" << std::endl;
   std::cout << "6. Get Min" << std::endl;
-  std::cout << "7. Exit" << std::endl;
+  std::cout << "7. Reverse Print" << std::endl;
+  std::cout << "8. Exit" << std::endl;
 }
 
 int main(){
@@ -123,6 +132,12 @@ int main(){
         std::cin.get();
         break;
       case 7:
+        std::cout << "Stack:" << std::endl;
+        stack.rprint();
+        std::cin.ignore();
+        std::cin.get();
+        break;
+      case 8:
         exit(0);
       default:
         std::cout << "Invalid choice" << std::endl;
