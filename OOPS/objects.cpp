@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 class Student {
   public:
@@ -16,15 +17,36 @@ class Student {
       std::cout << "Age: " << age << std::endl;
     };
 
-    ~Student() {
-      std::cout << "Destructor called" << std::endl;
-    };
+    // ~Student() {
+      // std::cout << "Destructor called" << std::endl;
+    // };
 };
 
 int main(){
-  Student student("John", 20);
-  Student student2 = student;
-  student.print();
-  student2.print();
+  int n;
+  std::cout << "Enter number of students: " << std::endl;
+  std::cin >> n;
+
+  std::vector<Student> students;
+
+  for(int i = 0; i < n; i++) {
+    std::string name;
+    int age;
+
+    std::cout << "Enter name: " << std::endl;
+    std::cin >> name;
+
+    std::cout << "Enter age: " << std::endl;
+    std::cin >> age;
+
+    Student student(name, age);
+    students.push_back(student);
+  }
+
+  std::cout << "Students: " << std::endl;
+  
+  for(int i = 0; i < n; i++) {
+    students[i].print();
+  }
   return 0;
 }
