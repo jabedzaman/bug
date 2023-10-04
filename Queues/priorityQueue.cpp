@@ -83,6 +83,8 @@ int main()
     std::cin >> n;
     PriorityQueue pq(n);
     while (true) {
+        /* clear screen */
+        // std::cout << "\033[2J\033[1;1H";
         menu();
         std::cout << "😁 Enter your choice "<<std::endl;
         std::cin >> choice;
