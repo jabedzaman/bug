@@ -6,9 +6,15 @@ function quick_sort(arr: number[]): number[] {
   }
 
   const pivot = arr[Math.floor(arr.length / 2)];
+  // console.log(pivot);
   const left = arr.filter((item) => item < pivot);
+  // console.log(left);
   const middle = arr.filter((item) => item === pivot);
+  // console.log(middle);
   const right = arr.filter((item) => item > pivot);
+  // console.log(right);
+
+  // console.log([...quick_sort(left), ...middle, ...quick_sort(right)]);
 
   return [...quick_sort(left), ...middle, ...quick_sort(right)];
 }

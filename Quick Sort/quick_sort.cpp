@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 void quick_sort(int *arr, int left, int right) {
     if (left >= right) return;
     int i = left, j = right, pivot = arr[left];
